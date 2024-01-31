@@ -1,11 +1,18 @@
 # Wordle-Project
 Wordle in java based off of the New York Times game. Made as a group project in CSC 335 Object-Oriented Programing.
+Fair warning, currently the program has an error with JavaFX because I tried to transfer over the files, but the code ran perfectly before and I am working on a fix. You are still able to see the code and techniques used.
+
+I had to use Git (in a different repository, I just have this here so I can show it) and Scrum to communicate with three other team members.
+There were several classes I worked with all interacting with each other.
+The project gave me very good experience with coding in a team, applying several object-oriented design patterns like model-view-controller design, testing code with JUnit, and making graphics with JavaFX.
+
+I also got good experience working on much of the design, backend, and core components of the front end.
 
 This is by far my most impressive program and the one I have spent the most time on. It may look simple, just being a wordle game, but there is so much more to it.
 
 I worked on many of the original ideas for the design and structure, as well as making the class and sequence diagrams.
 
-This was a team project, but I took a lot of the lead in SCRUM and I put in a lot of extra hours/ implemented a lot more features on this project because I wanted to see my vision come to fruition (making it look as close as possible to the real New York Times Wordle) and I enjoyed doing it. My group was great and did their parts well, however I would say I did most of the work for this, hence why I wanted to show it off on my git repository.
+This was a team project, but I took a lot of the lead in SCRUM and I put in a lot of extra hours/ implemented a lot more features on this project because I wanted to see my vision come to fruition (making it look as close as possible to the real New York Times Wordle) and I enjoyed doing it. My group was great and did their parts well, however I would say I had a lead role and did most of the work for this, and put in some extra hours, hence why I wanted to show it off on my git repository.
 
 I was primarily responsible for:
   • Letter class (the basis for how the whole thing worked, the letters make up the keyboard and display where the words pop up on)
