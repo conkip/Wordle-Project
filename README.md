@@ -1,19 +1,17 @@
 # Wordle-Project
 Wordle in Java based on the New York Times game. Made as a group project in CSC 335 Object-Oriented Programming.
-Currently, the program has an error with JavaFX because I tried to transfer over the files, but the code ran perfectly before and I am working on a fix. The code is still available to look at.
 
-I had to use Git (in a different repository, I just transferred it here to show) and Scrum to communicate with three other team members.
-There were several classes I wrote and maintained.
-The project gave me very good experience with coding in a team, applying several object-oriented design patterns like model-view-controller design, testing code with JUnit, and making graphics with JavaFX.
+Used Git (in a different repository, I just transferred it here to show) and Scrum to communicate with three other team members.
 
-I also got good experience working on much of the design, backend, and front end.
+There were several classes I wrote and maintained. 
+
+This project gave good experience with coding in a team, applying several object-oriented design patterns like model-view-controller design, testing code with JUnit, and making graphics with JavaFX.
+
+Also, got experience working on much of the design, backend, and front end.
 
 It may seem simple, just being a wordle game, but there are a lot of features and functionality added to it.
 
 I worked on many of the original ideas for the design and structure, as well as making the class and sequence diagrams.
-
-This was a team project, but I took much of the lead in SCRUM and I put in some extra hours/ implemented a lot more features on this project because I wanted to see my vision come to fruition (making it look as close as possible to the real New York Times Wordle) and I enjoyed doing it. 
-My group was great and did their parts well.
 
 I was primarily responsible for:
   • Letter class (the basis for how the whole thing worked, the letters make up the keyboard and display where the words pop up)
@@ -39,5 +37,3 @@ I was primarily responsible for:
     rest of the implementation, and worked a great deal in the WordleGUI class.
 
 Additionally, I made some extra effort to make the GUI look perfect by finding the exact fonts, colors, and images, as well as styling/ placing everything with the JavaFX framework.
-
-I did a lot of googling, but I learned a lot and got some great experience.
