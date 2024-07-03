@@ -1,4 +1,5 @@
 # Wordle-Project
+**HAVE IMAGES ABOVE README FILE TO SEE**
 Wordle in Java based on the New York Times game. Made as a group project in CSC 335 Object-Oriented Programming.
 
 Used Git (in a different repository, I just transferred it here to show) and Scrum to communicate with three other team members.
