@@ -106,7 +106,7 @@ public class SettingsDisplay extends VBox {
 		underContrastLabel.setFont(underLabelFont);
 		hardLabel.setFont(labelFont);
 		underHardLabel.setFont(underLabelFont);
-		settingsLabel.setFont(Font.loadFont("file:fonts/Helvetica Monospaced W06 Bold.ttf", 15.9));
+		settingsLabel.setFont(Font.loadFont("file:src/fonts/Helvetica Monospaced W06 Bold.ttf", 15.9));
 		
 		this.getChildren().add(settingsLabel);
 		this.setAlignment(Pos.TOP_CENTER);

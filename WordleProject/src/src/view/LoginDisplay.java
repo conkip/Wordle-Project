@@ -19,9 +19,9 @@ import javafx.scene.text.Font;
 import src.model.WordleUser;
 
 public class LoginDisplay extends VBox {
-	private Font titleLabelFont = Font.loadFont("file:fonts/KarnakPro-CondensedBlack.ttf", 30);
-	private Font subtitleLabelFont = Font.loadFont("file:fonts/Helvetica Monospaced W06 Bold.ttf", 14);
-	private Font labelFont = Font.loadFont("file:fonts/Helvetica Monospaced W06 Bold.ttf", 12);
+	private Font titleLabelFont = Font.loadFont("file:src/fonts/KarnakPro-CondensedBlack.ttf", 30);
+	private Font subtitleLabelFont = Font.loadFont("file:src/fonts/Helvetica Monospaced W06 Bold.ttf", 14);
+	private Font labelFont = Font.loadFont("file:src/fonts/Helvetica Monospaced W06 Bold.ttf", 12);
 
 	private Label titleLabel;
 	private TextArea emailTextArea;

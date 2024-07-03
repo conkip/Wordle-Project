@@ -396,7 +396,7 @@ public class BoardDisplay extends VBox {
 			for (String letter : wordString) {
 				word += letter;
 			}
-			URI uri = new File("soundEffects/youLose.mp3").toURI();
+			URI uri = new File("src/soundEffects/youLose.mp3").toURI();
 			MediaPlayer player = new MediaPlayer(new Media(uri.toString()));
 			player.play();
 			ErrorMessage errorMsg = new ErrorMessage(word.toUpperCase(), isDarkMode);
@@ -414,7 +414,7 @@ public class BoardDisplay extends VBox {
 					return "in progress";
 				}
 			}
-			URI uri = new File("soundEffects/youWin.mp3").toURI();
+			URI uri = new File("src/soundEffects/youWin.mp3").toURI();
 			MediaPlayer player = new MediaPlayer(new Media(uri.toString()));
 			player.play();
 			popUpErrorMessage("Great", gui.getMainCenterPane());
@@ -596,5 +596,10 @@ public class BoardDisplay extends VBox {
 		displayChildren();
 		gui.getMainCenterPane().getChildren().clear();
 		gui.getMainCenterPane().getChildren().add(this);
+	}
+	
+	public Guess getGuess()
+	{
+		return wordComparison;
 	}
 }

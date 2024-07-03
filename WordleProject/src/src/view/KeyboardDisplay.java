@@ -39,8 +39,8 @@ public class KeyboardDisplay extends VBox {
 	private Letter p = new Letter("P", true);
 	private BoardDisplay curBoard;
 	private ImageView backspaceImageView;
-	private Image backspaceImage = new Image("file:images/backspace.png");
-	private Image inverseBackspaceImage = new Image("file:images/backspace.png");
+	private Image backspaceImage = new Image("file:src/images/backspace.png");
+	private Image inverseBackspaceImage = new Image("file:src/images/backspace.png");
 	private Map<String, String> savedLetterColors = new HashMap<String, String>();
 	private int colSize = 5;
 
@@ -60,7 +60,7 @@ public class KeyboardDisplay extends VBox {
 
 		// increase width and text of backspace and enter buttons
 		letters[2][0].setPrefWidth(70);
-		letters[2][0].setFont(Font.loadFont("file:fonts/Helvetica Monospaced W06 Bold.ttf", 12));
+		letters[2][0].setFont(Font.loadFont("file:src/fonts/Helvetica Monospaced W06 Bold.ttf", 12));
 		letters[2][8].setPrefWidth(55);
 		registerHandlers();
 	}

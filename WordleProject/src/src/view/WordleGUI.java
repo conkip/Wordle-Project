@@ -93,7 +93,7 @@ public class WordleGUI extends Application {
 	 */
 	private void updateUsers() {
 		primaryStage.setOnCloseRequest(event -> {
-			setUpStage();
+			//setUpStage();
 			board.updateUserGuesses();
 			writeUser(wordleUser);
 		});
@@ -131,12 +131,12 @@ public class WordleGUI extends Application {
 
 		// This begins the header
 		title = new Label("Wordle");
-		title.setFont(Font.loadFont("file:fonts/KarnakPro-CondensedBlack.ttf", 40));
+		title.setFont(Font.loadFont("file:src/fonts/KarnakPro-CondensedBlack.ttf", 40));
 
 		// sets each button in the header
 		statsButton = new Button();
 		statsButton.setStyle("-fx-background-color: " + backgroundColor);
-		Image statsImg = new Image("file:images/statistics.png");
+		Image statsImg = new Image("file:src/images/statistics.png");
 		ImageView statsView = new ImageView(statsImg);
 		statsView.setFitHeight(29);
 		statsView.setFitWidth(29);
@@ -145,7 +145,7 @@ public class WordleGUI extends Application {
 
 		helpButton = new Button();
 		helpButton.setStyle("-fx-background-color: " + backgroundColor);
-		Image helpImg = new Image("file:images/help.png");
+		Image helpImg = new Image("file:src/images/help.png");
 		ImageView helpView = new ImageView(helpImg);
 		helpView.setFitHeight(29);
 		helpView.setFitWidth(29);
@@ -154,7 +154,7 @@ public class WordleGUI extends Application {
 
 		settingsButton = new Button();
 		settingsButton.setStyle("-fx-background-color: " + backgroundColor);
-		Image settingImg = new Image("file:images/settings.png");
+		Image settingImg = new Image("file:src/images/settings.png");
 		ImageView settingView = new ImageView(settingImg);
 		settingView.setFitHeight(29);
 		settingView.setFitWidth(29);
@@ -207,7 +207,7 @@ public class WordleGUI extends Application {
 
 		eventHandlers();
 		primaryStage.setScene(primaryScene);
-		primaryStage.getIcons().add(new Image("file:images/wordle_logo_32x32.png"));
+		primaryStage.getIcons().add(new Image("file:src/images/wordle_logo_32x32.png"));
 		primaryStage.show();
 	}
 
@@ -229,7 +229,7 @@ public class WordleGUI extends Application {
 			}
 			Scene helpScene = new Scene(tutorialDisplay, 500, 550);
 			helpStage.setScene(helpScene);
-			helpStage.getIcons().add(new Image("file:images/help.png"));
+			helpStage.getIcons().add(new Image("file:src/images/help.png"));
 			helpStage.setResizable(false);
 			settingsButton.setMouseTransparent(true);
 			statsButton.setMouseTransparent(true);
@@ -248,7 +248,7 @@ public class WordleGUI extends Application {
 			StatisticsDisplay statsDisplay = new StatisticsDisplay(wordleUser, this, colSize, rowSize);
 			Scene statsScene = new Scene(statsDisplay, 500, 500);
 			statsStage.setScene(statsScene);
-			statsStage.getIcons().add(new Image("file:images/statistics.png"));
+			statsStage.getIcons().add(new Image("file:src/images/statistics.png"));
 			statsStage.setResizable(false);
 			settingsButton.setMouseTransparent(true);
 			statsButton.setMouseTransparent(true);
@@ -265,7 +265,7 @@ public class WordleGUI extends Application {
 			SettingsDisplay settingsDisplay = new SettingsDisplay(this);
 			Scene settingsScene = new Scene(settingsDisplay, 500, 500);
 			settingsStage.setScene(settingsScene);
-			settingsStage.getIcons().add(new Image("file:images/settings.png"));
+			settingsStage.getIcons().add(new Image("file:src/images/settings.png"));
 			settingsStage.setResizable(false);
 			settingsStage.initOwner(primaryStage);
 			settingsStage.initModality(Modality.APPLICATION_MODAL);
@@ -294,15 +294,15 @@ public class WordleGUI extends Application {
 	 * sets the theme to dark mode for all displays
 	 */
 	public void setDarkMode() {
-		inverseImage("images/help.png", helpButton);
-		inverseImage("images/settings.png", settingsButton);
-		inverseImage("images/statistics.png", statsButton);
+		inverseImage("src/images/help.png", helpButton);
+		inverseImage("src/images/settings.png", settingsButton);
+		inverseImage("src/images/statistics.png", statsButton);
 		helpButton.setStyle("-fx-background-color: #121213");
 		settingsButton.setStyle("-fx-background-color: #121213");
 		statsButton.setStyle("-fx-background-color: #121213");
 
 		Button backspaceButton = (Button) keyboard.getBackspaceButton();
-		inverseImage("images/backspace.png", backspaceButton);
+		inverseImage("src/images/backspace.png", backspaceButton);
 
 		Map<String, String> keyboardSavedColorsMap = keyboard.getSavedLetterColors();
 		for (Map.Entry<String, String> entry : keyboardSavedColorsMap.entrySet()) {
@@ -332,19 +332,19 @@ public class WordleGUI extends Application {
 	 * sets the theme to lightMode for all displays
 	 */
 	public void setNonDarkMode() {
-		Image helpImg = new Image("file:images/help.png");
+		Image helpImg = new Image("file:src/images/help.png");
 		ImageView helpView = new ImageView(helpImg);
 		helpButton.setGraphic(helpView);
 		helpView.setFitHeight(30);
 		helpView.setFitWidth(30);
 
-		Image settingsImg = new Image("file:images/settings.png");
+		Image settingsImg = new Image("file:src/images/settings.png");
 		ImageView settingsView = new ImageView(settingsImg);
 		settingsButton.setGraphic(settingsView);
 		settingsView.setFitHeight(30);
 		settingsView.setFitWidth(30);
 
-		Image statsImg = new Image("file:images/statistics.png");
+		Image statsImg = new Image("file:src/images/statistics.png");
 		ImageView statsView = new ImageView(statsImg);
 		statsButton.setGraphic(statsView);
 		statsView.setFitHeight(30);
@@ -354,7 +354,7 @@ public class WordleGUI extends Application {
 		settingsButton.setStyle("-fx-background-color: #ffffff");
 		statsButton.setStyle("-fx-background-color: #ffffff");
 
-		Image backspaceImg = new Image("file:images/backspace.png");
+		Image backspaceImg = new Image("file:src/images/backspace.png");
 		ImageView backspaceView = new ImageView(backspaceImg);
 		keyboard.getBackspaceButton().setGraphic(backspaceView);
 		backspaceView.setFitHeight(30);
@@ -667,12 +667,12 @@ public class WordleGUI extends Application {
 	 * This method resets the BoardDisplay and KeyboardDisplay
 	 */
 	public void resetBoard() {
-		//Word word = Word.getInstance(colSize);
-		//word.setRandomWord(rowSize);
 		board.resetGuesses();
 		board.updateKeyboard(keyboard);
-		//board = new BoardDisplay(colSize, rowSize, gui);
-		//keyboard = new KeyboardDisplay(board, colSize);
+		board = new BoardDisplay(colSize, rowSize, this);
+		board.getGuess().getWord().setRandomWord(rowSize);
+		keyboard = new KeyboardDisplay(board, colSize);
+		setUpStage();
 	}
 
 }

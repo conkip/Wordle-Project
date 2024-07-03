@@ -28,8 +28,8 @@ public class MultiWordle extends VBox {
 	private WordleGUI gui;
 	int colSelcted = 5;
 	int rowSelected = 6;
-	private Font primaryFont = Font.loadFont("file:fonts/Helvetica Monospaced W06 Bold.ttf", 20);
-	private Font secondaryFont = Font.loadFont("file:fonts/Helvetica Monospaced W06 Bold.ttf", 16);
+	private Font primaryFont = Font.loadFont("file:src/fonts/Helvetica Monospaced W06 Bold.ttf", 20);
+	private Font secondaryFont = Font.loadFont("file:src/fonts/Helvetica Monospaced W06 Bold.ttf", 16);
 
 	/**
 	 * Constructor calls the setUpPane method and local WordleGUI instance variable
@@ -59,8 +59,8 @@ public class MultiWordle extends VBox {
 			button.setStyle("-fx-text-fill: #ffffff; -fx-background-color: #3a3a3c; -fx-background-radius: 10px");
 			button.setFont(secondaryFont);
 			button.setFocusTraversable(false);
-			// button.setMaxSize(100, 50);
-			// button.setMinSize(100, 50);
+			//button.setMaxSize(100, 50);
+			//button.setMinSize(100, 50);
 			multiColButtons.add(button);
 			colButtonPane.getChildren().add(button);
 		}
@@ -107,7 +107,7 @@ public class MultiWordle extends VBox {
 
 		Button okButton = new Button("Ok");
 		okButton.setStyle("-fx-text-fill: #ffffff; -fx-background-color: #3a3a3c; -fx-background-radius: 10px");
-		okButton.setFont(Font.loadFont("file:fonts/Helvetica Monospaced W06 Bold.ttf", 30));
+		okButton.setFont(Font.loadFont("file:src/fonts/Helvetica Monospaced W06 Bold.ttf", 30));
 		okButton.setFocusTraversable(false);
 		okButton.setOnAction((event) -> {
 			setupInitial();
@@ -116,7 +116,7 @@ public class MultiWordle extends VBox {
 		buttonPane.getChildren().addAll(colButtonPane, rowButtonPane);
 		this.getChildren().addAll(defaultWordleButton, buttonPane, okButton);
 
-		Scene scene = new Scene(this, 60, 60);
+		Scene scene = new Scene(this, 600, 600);
 		this.setStyle("-fx-background-color: #818384");
 		buttonPane.setAlignment(Pos.CENTER);
 		this.setAlignment(Pos.CENTER);

@@ -69,7 +69,7 @@ public class Letter extends Button {
 			setKeyboardButtonStyle("Black", "Gray");
 			textColor = "Black";
 			backgroundColor = "Gray";
-			this.setFont(Font.loadFont("file:fonts/Helvetica Monospaced W06 Bold.ttf", 19));
+			this.setFont(Font.loadFont("file:src/fonts/Helvetica Monospaced W06 Bold.ttf", 19));
 
 			this.setFocusTraversable(false);
 
@@ -79,7 +79,7 @@ public class Letter extends Button {
 			textColor = "Black";
 			backgroundColor = "White";
 			borderColor = "Gray";
-			this.setFont(Font.loadFont("file:fonts/Helvetica Monospaced W06 Bold.ttf", 16.5));
+			this.setFont(Font.loadFont("file:src/fonts/Helvetica Monospaced W06 Bold.ttf", 16.5));
 
 			// no buttons are selected or selectable
 			this.setMouseTransparent(true);

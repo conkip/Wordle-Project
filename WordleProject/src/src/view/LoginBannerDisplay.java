@@ -20,7 +20,7 @@ import javafx.stage.Stage;
 import src.model.WordleUser;
 
 public class LoginBannerDisplay extends HBox {
-	private Font loginLabelFont = Font.loadFont("file:fonts/franklin-gothic-book.ttf", 12);
+	private Font loginLabelFont = Font.loadFont("file:src/fonts/franklin-gothic-book.ttf", 12);
 	private static Stage loginStage;
 
 	/**
@@ -35,7 +35,7 @@ public class LoginBannerDisplay extends HBox {
 		this.setSpacing(6);
 		this.setAlignment(Pos.CENTER_LEFT);
 
-		Image loginImg = new Image("file:images/login.png");
+		Image loginImg = new Image("file:src/images/login.png");
 		ImageView loginView = new ImageView(loginImg);
 		loginView.setFitWidth(30);
 		loginView.setFitHeight(30);
@@ -53,7 +53,7 @@ public class LoginBannerDisplay extends HBox {
 			LoginDisplay loginDisplay = new LoginDisplay(isDarkMode);
 			Scene loginScene = new Scene(loginDisplay, 500, 500);
 			loginStage.setScene(loginScene);
-			loginStage.getIcons().add(new Image("file:images/login.png"));
+			loginStage.getIcons().add(new Image("file:src/images/login.png"));
 			loginStage.setResizable(false);
 			loginButton.setMouseTransparent(true);
 			loginStage.showAndWait();

@@ -25,10 +25,10 @@ import javafx.scene.text.Font;
 import src.model.WordleUser;
 
 public class StatisticsDisplay extends VBox {
-	private Font mainLabelFont = Font.loadFont("file:fonts/Helvetica Monospaced W06 Bold.ttf", 14);
-	private Font numLabelFont = Font.loadFont("file:fonts/franklin-gothic-book.ttf", 42);
-	private Font underNumLabelFont = Font.loadFont("file:fonts/franklin-gothic-book.ttf", 12);
-	private Font distNumLabelFont = Font.loadFont("file:fonts/Helvetica Monospaced W06 Bold.ttf", 12);
+	private Font mainLabelFont = Font.loadFont("file:src/fonts/Helvetica Monospaced W06 Bold.ttf", 14);
+	private Font numLabelFont = Font.loadFont("file:src/fonts/franklin-gothic-book.ttf", 42);
+	private Font underNumLabelFont = Font.loadFont("file:src/fonts/franklin-gothic-book.ttf", 12);
+	private Font distNumLabelFont = Font.loadFont("file:src/fonts/Helvetica Monospaced W06 Bold.ttf", 12);
 	private WordleGUI gui;
 	private boolean isDarkMode;
 	private boolean isContrastMode;

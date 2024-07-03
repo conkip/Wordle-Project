@@ -213,4 +213,9 @@ public class Guess implements Serializable{
 	{
 		return curGuessColors;
 	}
+	
+	public Word getWord()
+	{
+		return word;
+	}
 }

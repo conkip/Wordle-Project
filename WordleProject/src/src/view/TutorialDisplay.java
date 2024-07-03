@@ -43,13 +43,13 @@ public class TutorialDisplay extends VBox {
 		VBox statsContainer = new VBox(0);
 
 		Label header = new Label("How To Play");
-		header.setFont(Font.loadFont("file:fonts/KarnakPro-CondensedBlack.ttf", 30));
+		header.setFont(Font.loadFont("file:src/fonts/KarnakPro-CondensedBlack.ttf", 30));
 		if (isDarkMode) {
 			header.setTextFill(Color.WHITE);
 		}
 		statsContainer.getChildren().add(header);
 		Label moreHeader = new Label("Guess the Wordle in " + rowSize + " tries.");
-		moreHeader.setFont(Font.loadFont("file:fonts/franklin-gothic-book.ttf", 20));
+		moreHeader.setFont(Font.loadFont("file:src/fonts/franklin-gothic-book.ttf", 20));
 		if (isDarkMode) {
 			moreHeader.setTextFill(Color.WHITE);
 		}
@@ -71,7 +71,7 @@ public class TutorialDisplay extends VBox {
 		//Initializes the example of a correct letter in the display
 		VBox firstExample = new VBox(0);
 		Label exampleText = new Label("Examples");
-		exampleText.setFont(Font.loadFont("file:fonts/Helvetica Monospaced W06 Bold.ttf", 15));
+		exampleText.setFont(Font.loadFont("file:src/fonts/Helvetica Monospaced W06 Bold.ttf", 15));
 		if (isDarkMode) {
 			exampleText.setTextFill(Color.WHITE);
 		}
@@ -99,7 +99,7 @@ public class TutorialDisplay extends VBox {
 		firstExample.getChildren().add(hbox);
 		HBox exampleExplanation = new HBox(2);
 		Label exampleText2 = new Label("W");
-		exampleText2.setFont(Font.loadFont("file:fonts/Helvetica Monospaced W06 Bold.ttf", 15));
+		exampleText2.setFont(Font.loadFont("file:src/fonts/Helvetica Monospaced W06 Bold.ttf", 15));
 		if (isDarkMode) {
 			exampleText2.setTextFill(Color.WHITE);
 		}
@@ -140,7 +140,7 @@ public class TutorialDisplay extends VBox {
 		secondExample.getChildren().add(hbox2);
 		HBox exampleExplanation2 = new HBox(2);
 		Label exampleText4 = new Label("I");
-		exampleText4.setFont(Font.loadFont("file:fonts/Helvetica Monospaced W06 Bold.ttf", 16));
+		exampleText4.setFont(Font.loadFont("file:src/fonts/Helvetica Monospaced W06 Bold.ttf", 16));
 		if (isDarkMode) {
 			exampleText4.setTextFill(Color.WHITE);
 		}
@@ -180,7 +180,7 @@ public class TutorialDisplay extends VBox {
 		thirdExample.getChildren().add(hbox3);
 		HBox exampleExplanation3 = new HBox(2);
 		Label exampleText6 = new Label("U");
-		exampleText6.setFont(Font.loadFont("file:fonts/Helvetica Monospaced W06 Bold.ttf", 16));
+		exampleText6.setFont(Font.loadFont("file:src/fonts/Helvetica Monospaced W06 Bold.ttf", 16));
 		if (isDarkMode) {
 			exampleText6.setTextFill(Color.WHITE);
 		}
