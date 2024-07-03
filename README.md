@@ -1,5 +1,6 @@
 # Wordle-Project
-**HAVE IMAGES ABOVE README FILE TO SEE**
+***I HAVE IMAGES ABOVE README FILE TO SEE WHAT IT LOOKS LIKE
+
 Wordle in Java based on the New York Times game. Made as a group project in CSC 335 Object-Oriented Programming.
 
 Used Git (in a different repository, I just transferred it here to show) and Scrum to communicate with three other team members.
@@ -34,7 +35,9 @@ I was primarily responsible for:
 
   • Guess class: class to make and check guesses
 
+  • all of the word bank text files for 3-7 letter words
+
   • Furthermore, I worked on code in nearly every class, especially the ones in the model like Word and Dictionary to restructure and rewrite most of it to work with the
     rest of the implementation, and worked a great deal in the WordleGUI class.
 
-Additionally, I made some extra effort to make the GUI look perfect by finding the exact fonts, colors, and images, as well as styling/ placing everything with the JavaFX framework.
+Additionally, I made some extra effort to make the GUI look as identical to the original game by finding the exact fonts, colors, and images, as well as styling/ placing everything with the JavaFX framework.
