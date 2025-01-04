@@ -26,7 +26,8 @@ It may seem simple, just being a wordle game, but there are a lot of features an
 I worked on many of the original ideas for the design and structure, as well as making the class and sequence diagrams.
 
 I was primarily responsible for:
-  • Letter class (the basis for how the whole thing worked, the letters make up the keyboard and display where the words pop up)
+
+  • Letter (extended Button) class (the basis for how the whole thing worked, the letters make up the keyboard and display where the words pop up)
 
   • KeyboardDisplay class (bottom keyboard which you can click with your mouse and shows which letters have been used)
 
