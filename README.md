@@ -15,7 +15,7 @@ Wordle in Java based on the New York Times game.
 Made as a group project in CSC 335 Object-Oriented Programming in Sophomore Year.
 Includes class and sequence diagrams.
 
-I was primarily responsible for:
+I was responsible for:
 
   • Letter (extended Button) class (the basis for how the whole thing worked, the letters make up the keyboard and display where the words pop up)
 
